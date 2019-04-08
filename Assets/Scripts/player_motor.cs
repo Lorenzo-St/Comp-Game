@@ -7,6 +7,8 @@ public class player_motor : MonoBehaviour
 {
     // Script Connects
     private player_controller PC;
+    [SerializeField] 
+    private Game_manager GM;
     
     // Vectors
     private Vector3 velocity = Vector3.zero;
@@ -49,8 +51,8 @@ public class player_motor : MonoBehaviour
     // Do Physics iterations
     private void FixedUpdate()
     {
-        PerformMovement();
-        PerformRotation();
+            PerformMovement();
+            PerformRotation();
     }
 
     // Perform Movement based on velocity variable
