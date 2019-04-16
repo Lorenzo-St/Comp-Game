@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\st.l1281\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\st.l1281\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Comp-Game.482239225.00" t="ExcludeRecursive" />
+    <e p="U:\Unity Stuff\Games\Comp-Game" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Cursor_Stuff.cs" t="Include" />
+          <e p="Game_manager.cs" t="Include" />
+          <e p="GUI_Manager.cs" t="Include" />
+          <e p="Main_Controller.cs" t="Include" />
+          <e p="Object_Controller.cs" t="Include" />
+          <e p="Pause_Menu.cs" t="Include" />
+          <e p="player_controller.cs" t="Include" />
+          <e p="player_motor.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Comp-Game.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
