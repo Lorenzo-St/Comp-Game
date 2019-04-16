@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Game_manager : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class Game_manager : MonoBehaviour
     
     // Data Holders
     public int score;
-    public float Time_left = 60f;
+    public float Time_left = 59f;
     public int min = 4;
     
     // GUI Stuff
@@ -56,22 +57,29 @@ public class Game_manager : MonoBehaviour
             if (FreePlay == false)
             {
                 Time_left -= Time.deltaTime;
-                if (Time_left < 0)
                 {
                     min -= 1;
-                    Time_left = 60;
-                    if (min <= 0)
+                    Time_left = 59;
+                    if (min < 0)
                     {
                         GameOver();
                     }
                 }
+                int sec = Mathf.RoundToInt(Time_left);
+                if(sec>9)
+                    Time_Display.text = "Time " + min + ":" + sec;
+                if (sec <= 9)
+                    Time_Display.text = "Time " + min + ":0" + sec; 
             }
+            
         }
 
+         if (FreePlay)
+         {
+             Time_Display.text = "Time ∞";
+         }
 
-         int sec = Mathf.RoundToInt(Time_left);
 
-         Time_Display.text = "Time: " + min + ":" + sec;
          Score_Display.text = score.ToString();
         SetCursorState();
     }
@@ -89,6 +97,7 @@ public class Game_manager : MonoBehaviour
 
     void GameOver()
     {
-        
+        SceneManager.LoadScene("EndGame");
+        wantedMode = CursorLockMode.None;
     }
 }
