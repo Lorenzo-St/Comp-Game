@@ -22,6 +22,7 @@ public class Object_Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        was_hit = false;
         Self = GetComponent<Rigidbody>();
         Self.transform.position = new Vector3(StartingX, StartingY, StartingZ);
     }

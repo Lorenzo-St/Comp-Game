@@ -83,7 +83,7 @@ public class player_controller : MonoBehaviour
 
     public void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Floor")
+        if (other.gameObject.tag == "Floor" || other.gameObject.tag == "Object")
         {
             IsGrounded = true;
         }

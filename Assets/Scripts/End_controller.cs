@@ -17,6 +17,11 @@ public class End_controller : MonoBehaviour
         Score.text = "Score: " + GM.score;
     }
 
+    void Update()
+    {
+        Score.text = "Score: " + GM.score;
+    }
+
     public void Return() {
         
         SceneManager.LoadScene("MainMenu");

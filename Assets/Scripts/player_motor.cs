@@ -23,7 +23,7 @@ public class player_motor : MonoBehaviour
     // Data Handlers
     [SerializeField]
     private float CameraRotationLimit = 85f;
-    private float CamRotateX = 0f;
+    private float CamRotateX = 0;
     private float currCamRotX = 0f;
 
 

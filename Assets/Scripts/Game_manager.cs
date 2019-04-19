@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Game_manager : MonoBehaviour
 {
@@ -22,6 +23,9 @@ public class Game_manager : MonoBehaviour
 
     [SerializeField] 
     private Text Time_Display;
+
+    [SerializeField] 
+    private Text HighScore;
     
     
     // Bool
@@ -29,6 +33,10 @@ public class Game_manager : MonoBehaviour
     public bool FreePlay;
     
     CursorLockMode wantedMode;
+    
+    // Connections 
+    [SerializeField] 
+    private Score_Controller SC;
     
     
 
@@ -47,6 +55,12 @@ public class Game_manager : MonoBehaviour
             isPaused = true;
         }
 
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+            min = 0;
+            Time_left = 10;
+        }
+
         if (isPaused)
         {
             Paused();
@@ -57,13 +71,15 @@ public class Game_manager : MonoBehaviour
             if (FreePlay == false)
             {
                 Time_left -= Time.deltaTime;
+                if (min == 0 && Time_left <= 0)
                 {
+                    GameOver();
+                    SC.Write();
+                }
+                if(Time_left <= -1){
                     min -= 1;
                     Time_left = 59;
-                    if (min < 0)
-                    {
-                        GameOver();
-                    }
+
                 }
                 int sec = Mathf.RoundToInt(Time_left);
                 if(sec>9)
@@ -79,7 +95,7 @@ public class Game_manager : MonoBehaviour
              Time_Display.text = "Time ∞";
          }
 
-
+         HighScore.text = SC.HigherScore.ToString();
          Score_Display.text = score.ToString();
         SetCursorState();
     }
