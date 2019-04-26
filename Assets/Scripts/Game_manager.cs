@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.SocialPlatforms.Impl;
+
 
 public class Game_manager : MonoBehaviour
 {
@@ -37,6 +37,9 @@ public class Game_manager : MonoBehaviour
     // Connections 
     [SerializeField] 
     private Score_Controller SC;
+
+    [SerializeField] 
+    private End_controller EC;
     
     
 
@@ -111,9 +114,11 @@ public class Game_manager : MonoBehaviour
         Cursor.visible = (CursorLockMode.Locked != wantedMode);
     }
 
-    void GameOver()
+    public void GameOver()
     {
         SceneManager.LoadScene("EndGame");
         wantedMode = CursorLockMode.None;
+        EC.Score = score;
+
     }
 }

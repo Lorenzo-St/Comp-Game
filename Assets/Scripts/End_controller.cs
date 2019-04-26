@@ -10,21 +10,32 @@ public class End_controller : MonoBehaviour
     [SerializeField] 
     private Game_manager GM;
 
-    public Text Score;
-    // Start is called before the first frame update
+    public Text Score_dis;
+
+    public int Score;
+    
+    CursorLockMode wantedMode;
+
     void Start()
     {
-        Score.text = "Score: " + GM.score;
+        Score_dis.text = "Score: " + Score;
+        wantedMode = CursorLockMode.None;
     }
 
     void Update()
     {
-        Score.text = "Score: " + GM.score;
+        Score_dis.text = "Score: " + Score;
+        SetCursorState();
     }
 
     public void Return() {
         
         SceneManager.LoadScene("MainMenu");
         
+    }
+    void SetCursorState()
+    {
+        Cursor.lockState = wantedMode;
+        Cursor.visible = (CursorLockMode.Locked != wantedMode);
     }
 }
