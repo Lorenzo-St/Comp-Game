@@ -77,7 +77,7 @@ public class Game_manager : MonoBehaviour
                 if (min == 0 && Time_left <= 0)
                 {
                     GameOver();
-                    SC.Write();
+
                 }
                 if(Time_left <= -1){
                     min -= 1;
@@ -116,6 +116,7 @@ public class Game_manager : MonoBehaviour
 
     public void GameOver()
     {
+        SC.Write();
         SceneManager.LoadScene("EndGame");
         wantedMode = CursorLockMode.None;
         EC.Score = score;
