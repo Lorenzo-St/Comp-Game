@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2232,7 +2232,7 @@ PrefabInstance:
     - target: {fileID: 6577431059806957251, guid: d59467d2e69311441917ba7742bc14da,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8
+      value: -8.16
       objectReference: {fileID: 0}
     - target: {fileID: 6577431059806957251, guid: d59467d2e69311441917ba7742bc14da,
         type: 3}
@@ -4658,6 +4658,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3144152906186055447, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
+        type: 3}
+      propertyPath: m_Name
+      value: Game Manager
+      objectReference: {fileID: 0}
     - target: {fileID: 3144152906186055440, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
         type: 3}
       propertyPath: Player
@@ -4699,10 +4704,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 452099502017914382, guid: b3d44758cf2c6c042b335fb8c282fedc,
         type: 3}
-    - target: {fileID: 3144152906186055447, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
+    - target: {fileID: 3144152906186055442, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
         type: 3}
-      propertyPath: m_Name
-      value: Game Manager
+      propertyPath: GUI
+      value: 
+      objectReference: {fileID: 1217926862}
+    - target: {fileID: 3144152906186055442, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
+        type: 3}
+      propertyPath: PauseMenu
+      value: 
+      objectReference: {fileID: 461501136}
+    - target: {fileID: 3144152906186055442, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
+        type: 3}
+      propertyPath: Score
+      value: 
+      objectReference: {fileID: 294006172}
+    - target: {fileID: 5355360497213059141, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3144152906186055441, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
         type: 3}
@@ -4758,26 +4778,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3144152906186055442, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
-        type: 3}
-      propertyPath: GUI
-      value: 
-      objectReference: {fileID: 1217926862}
-    - target: {fileID: 3144152906186055442, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
-        type: 3}
-      propertyPath: PauseMenu
-      value: 
-      objectReference: {fileID: 461501136}
-    - target: {fileID: 3144152906186055442, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
-        type: 3}
-      propertyPath: Score
-      value: 
-      objectReference: {fileID: 294006172}
-    - target: {fileID: 5355360497213059141, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0e32e859ff9ecf4f98e74ec812d3c11, type: 3}
@@ -4882,7 +4882,7 @@ PrefabInstance:
     - target: {fileID: 6577431059806957251, guid: d59467d2e69311441917ba7742bc14da,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8
+      value: 8.7
       objectReference: {fileID: 0}
     - target: {fileID: 6577431059806957251, guid: d59467d2e69311441917ba7742bc14da,
         type: 3}
