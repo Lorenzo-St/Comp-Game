@@ -720,7 +720,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.6
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -4658,11 +4658,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3144152906186055447, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
-        type: 3}
-      propertyPath: m_Name
-      value: Game Manager
-      objectReference: {fileID: 0}
     - target: {fileID: 3144152906186055440, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
         type: 3}
       propertyPath: Player
@@ -4704,25 +4699,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 452099502017914382, guid: b3d44758cf2c6c042b335fb8c282fedc,
         type: 3}
-    - target: {fileID: 3144152906186055442, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
+    - target: {fileID: 3144152906186055447, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
         type: 3}
-      propertyPath: GUI
-      value: 
-      objectReference: {fileID: 1217926862}
-    - target: {fileID: 3144152906186055442, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
-        type: 3}
-      propertyPath: PauseMenu
-      value: 
-      objectReference: {fileID: 461501136}
-    - target: {fileID: 3144152906186055442, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
-        type: 3}
-      propertyPath: Score
-      value: 
-      objectReference: {fileID: 294006172}
-    - target: {fileID: 5355360497213059141, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
+      propertyPath: m_Name
+      value: Game Manager
       objectReference: {fileID: 0}
     - target: {fileID: 3144152906186055441, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
         type: 3}
@@ -4778,6 +4758,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144152906186055442, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
+        type: 3}
+      propertyPath: GUI
+      value: 
+      objectReference: {fileID: 1217926862}
+    - target: {fileID: 3144152906186055442, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
+        type: 3}
+      propertyPath: PauseMenu
+      value: 
+      objectReference: {fileID: 461501136}
+    - target: {fileID: 3144152906186055442, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
+        type: 3}
+      propertyPath: Score
+      value: 
+      objectReference: {fileID: 294006172}
+    - target: {fileID: 5355360497213059141, guid: c0e32e859ff9ecf4f98e74ec812d3c11,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0e32e859ff9ecf4f98e74ec812d3c11, type: 3}
@@ -4949,6 +4949,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ef9ba136e30dc884fbea4edb3697a7a3, type: 2}
+    - target: {fileID: 64164714261500621, guid: d59467d2e69311441917ba7742bc14da,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64164714261500621, guid: d59467d2e69311441917ba7742bc14da,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d59467d2e69311441917ba7742bc14da, type: 3}
 --- !u!4 &7372490992168767626 stripped
